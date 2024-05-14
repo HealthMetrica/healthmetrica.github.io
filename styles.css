@@ -43,7 +43,7 @@ header nav ul li a {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url('HealthDataInsights.github.io/about/nrd-c3tNiAb098I-unsplash.jpg');
+    background-image: url('/about/nrd-c3tNiAb098I-unsplash.jpg'); /* Adjusted URL */
     background-position: center;
     opacity: 0.1;
     z-index: -1;
@@ -66,18 +66,20 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 .about-image {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 80%;
     height: 80%;
     background-size: cover;
-    background-image: url('HealthDataInsights.github.io/HC_images/markus-frieauff-IJ0KiXl4uys-unsplash.jpg');
+    background-image: url('/HC_images/markus-frieauff-IJ0KiXl4uys-unsplash.jpg'); /* Adjusted URL */
     background-position: center;
     opacity: 0.3;
     z-index: -1;
 }
+
 #service {
     background-color: #f4f4f4;
     padding: 50px 0;
@@ -89,34 +91,27 @@ footer {
     text-align: center;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
 .data_storage-image {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 45%;
     background-size: cover;
-    background-image: url('HealthDataInsights.github.io/cod_images/markus-spiske-iar-afB0QQw-unsplash.jpg');
+    background-image: url('/cod_images/markus-spiske-iar-afB0QQw-unsplash.jpg'); /* Adjusted URL */
     background-position: center;
     opacity: 0.4;
     z-index: -1;
 }
 
-.data_viz-image{
-	position: absolute;
+.data_viz-image {
+    position: absolute;
     top: 4.5;
     left: 0;
     width: 120%;
     height: 25%;
     background-size: cover;
-    background-image: url('HealthDataInsights.github.io/Analytics_images/luke-chesser-JKUTrJ4vK00-unsplash.jpg');
+    background-image: url('/Analytics_images/luke-chesser-JKUTrJ4vK00-unsplash.jpg'); /* Adjusted URL */
     background-position: center;
     opacity: 0.4;
     z-index: -1;
