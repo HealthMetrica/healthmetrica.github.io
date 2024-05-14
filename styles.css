@@ -43,7 +43,7 @@ header nav ul li a {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url('/Users/koissi/Desktop/HealtDataInsights/about/nrd-c3tNiAb098I-unsplash.jpg');
+    background-image: url('HealthDataInsights.github.io/about/nrd-c3tNiAb098I-unsplash.jpg');
     background-position: center;
     opacity: 0.1;
     z-index: -1;
@@ -73,7 +73,7 @@ footer {
     width: 80%;
     height: 80%;
     background-size: cover;
-    background-image: url('/Users/koissi/Desktop/HealtDataInsights/HC_images/markus-frieauff-IJ0KiXl4uys-unsplash.jpg');
+    background-image: url('HealthDataInsights.github.io/HC_images/markus-frieauff-IJ0KiXl4uys-unsplash.jpg');
     background-position: center;
     opacity: 0.3;
     z-index: -1;
@@ -103,7 +103,7 @@ footer {
     width: 100%;
     height: 45%;
     background-size: cover;
-    background-image: url('/Users/koissi/Desktop/HealtDataInsights/cod_images/markus-spiske-iar-afB0QQw-unsplash.jpg');
+    background-image: url('HealthDataInsights.github.io/cod_images/markus-spiske-iar-afB0QQw-unsplash.jpg');
     background-position: center;
     opacity: 0.4;
     z-index: -1;
@@ -116,7 +116,7 @@ footer {
     width: 120%;
     height: 25%;
     background-size: cover;
-    background-image: url('/Users/koissi/Desktop/HealtDataInsights/Analytics_images/luke-chesser-JKUTrJ4vK00-unsplash.jpg');
+    background-image: url('HealthDataInsights.github.io/Analytics_images/luke-chesser-JKUTrJ4vK00-unsplash.jpg');
     background-position: center;
     opacity: 0.4;
     z-index: -1;
