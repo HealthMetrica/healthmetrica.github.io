@@ -1,60 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Health Metrica</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Health Metrica</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive_service.css">
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to Health Metrica</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="faq.html">FAQ's</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- ====== 1.1. Header section ====== -->
+            <header>
+                <nav class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- site logo -->
+                        <a class="navbar-logo" href="/" style="background-color: aliceblue; padding:10px"><img src="Images/logo.png" alt="logo"></a>
+                        <button class="navbar-toggler" onclick="openNav()" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <!-- menus -->
+                        <ul class="navbar-nav flex">
+                            <li><a data-key="gf" class="nav-link" href="index.html">Home</a></li>
+                            <li><a data-key="sjf" class="nav-link" href="index.html#about">About</a></li>
+                            <li><a data-key="sdgdh"class="nav-link" href="contactUs.html">Contact</a></li>
+                            <li>
+                                <select class="language-switcher" id="languageSelector">
+                                    <option selected>Lang+</option>
+                                    <option id="lang-en" class="lang-btn" value="en">🇬🇧 En </option>
+                                    <option id="lang-fr" class="lang-btn" value="fr">🇫🇷 Fr</option>
+                                </select>          
+                            </li>
+                            <li class="dropdown">
+                                <a data-key="scvf" class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a data-key="eyrkf" class="dropdown-item active" href="index.html#service">Services</a></li>
+                                    <li><a data-key="srjsh" class="dropdown-item" href="index.html#faq">FAQ</a></li>
+                                    <li><a data-key="snvhv" class="dropdown-item" href="donation.html">Donation</a></li>
+                                    <li><a data-key="sdndbe" class="dropdown-item" href="comingsoon.html">Partenaire</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
-    <section id="services" class="section">
-        <h2>Our Services</h2>
-        <div class="service">
+                    <div class="flex nav-right">
+                        <p data-key="ddzzdz">Call Us: <span>+225 05 75 43 20 431</span></p>
+                        <!-- header buttons -->
+                        <i onclick="open_search_bar()" class="fa-solid fa-magnifying-glass"></i>
+                        <i onclick="open_right_side()" class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <!-- Sidebar -->
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="Images/logo.png" alt="logo"></a>
+                        <button class="closebtn btn_hover1" onclick="closeNav()"><i
+                                class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div>
+                        <!-- side menus -->
+                        <ul>
+                            <li><a data-key="svndjd" class="nav-link" href="index.html">Home</a></li>
+                            <li><a data-key="skrtrn" class="nav-link" href="index.html#about">About</a></li>
+                            <li><a data-key="rgrjfnf" class="nav-link" href="contactUs.html">Contact</a></li>
+                            <li class="pages"><a href="#">More</a></li>
+                            <li class="collapse_btn">
+                                <a class="nav-link plus_collapse" data-bs-toggle="collapse" href="javascript:void(0);"
+                                    onclick="toggleCollapse('pages')" aria-expanded="false" aria-controls="pages">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a data-key="svljgjt" class="nav-link active" href="index.html#service">Services</a></li>
+                                        <li><a data-key="snsvdf" class="nav-link" href="index.html#faq">FAQ</a></li>
+                                        <li><a data-key="setrurhf" class="nav-link" href="donation.html">Donation</a></li>
+                                        <li><a data-key="pfjfj" class="nav-link" href="comingsoon.html">Partenaire</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
 
-            <div class="data_storage-image"></div>
-            <div class="content">
-            <h3>Data Storage and Warehousing</h3>
-            <p>We provide data warehousing services mainly for healthcare facilities and other sectors. Our solutions offer state-of-the-art encryption protocols and stringent security measures to ensure the confidentiality and integrity of all healthcare data.</p>
+                <!-- searchbar -->
+                <div id="search-bar">
+                    <div class="btn_hover1" onclick="close_search_bar()"><i class="fa-solid fa-xmark"></i></div>
+                    <form method="search" action="#">
+                        <input type="search" required placeholder="Search...">
+                        <button type="submit" data-key="sdjkbf" class="btn_hover1">Search</button>
+                    </form>
+                </div>
+
+                <!-- Right Sidebar -->
+                <section class="header-right-sidebar" id="right_side">
+                    <div class="flex flex-sb">
+                        <a href="/"><img src="Images/right-side-logo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p>
+                        Health Metrica <span data-key="sfbfjfhfbf"> revolutionizes healthcare with secure data solutions, advanced analytics, and
+                        innovative tools, empowering professionals to enhance patient care and improve health outcomes
+                        globally.
+                    </span>
+                    </p>
+                    <a data-key="vbdhfjfhf" href="#about" class="btn_hover1">About Us</a>
+                    <hr>
+                    <h4>Connected details:</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#" class="text-lowercase">healthMetrica@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                            <a href="#">+225 05 75 43 20 43</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
+                            <a data-key="ddffggdde" href="#">Office Hours: 8AM - 11PM Sunday -
+                                Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ====== End of 1.1. Header section ====== -->
         </div>
-        
-        <div class="service">
-        <div class="data_viz-image"></div>
-            <div class="content">
-            <h3>Data Analysis and Visualization</h3>
-            <p>We specialize in data analysis and visualization, empowering professionals with practical skills to drive informed decisions and improve patient outcomes.</p>
-        </div>
-        
-        <div class="service">
-            <h3>Consulting Services</h3>
-            <p>We offer consulting services in the field of Bioinformatics, epidemiology, and health data analytics. Our team provides expert guidance and support to healthcare organizations seeking to leverage data for strategic decision-making.</p>
-            <div class="image-container">
-                <img src="Bioinfo/sangharsh-lohakare-Iy7QyzOs1bo-unsplash" alt="Consulting Services" width="600">
+
+        <!-- ====== 1.7. Services section ====== -->
+        <section class="service" id="service">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="flex gap-1">
+                                <hr class="service-hr1">
+                                <h5>SERVICES</h5>
+                            </div>
+                            <h2 data-key="dderrf" class="mt-15">Services We Offer</h2>
+                            <p class="mt-15">
+                               <span data-key="dderdfrf">At</span>  Health Metrica, <span data-key="ddffrf">  our mission is to leverage artificial intelligence to improve
+                                healthcare in resource-limited areas. We believe in harnessing the power of technology
+                                to address the unique challenges faced by healthcare systems around the world.
+                            </span>
+                            </p>
+                        </div>
+                        <hr class="mt-15 mb-15">
+                    </div>
+                    <div class="card color-dark" id="service1" data-aos="fade-down">
+                        <figure><img src="./Images/imageHealthMetrica/service1.jpg" width="1050" height="600"
+                                alt="slider0"></figure>
+                        <h5 data-key="hgjrrf">Advanced Data Warehousing Services</h5>
+                        <p data-key="rrfnb">
+                            Health Metrica provides advanced data warehousing solutions tailored for healthcare and
+                            other
+                            critical sectors. Our services prioritize security, featuring cutting-edge encryption
+                            protocols
+                            and robust measures to ensure data confidentiality and integrity, making them ideal for
+                            managing
+                            sensitive healthcare information.
+                        </p>
+                        <p data-key="tiijrf">
+                            Designed for efficiency and scalability, our platforms seamlessly integrate with existing
+                            systems, enabling easy access to data for analysis and decision-making. Whether managing
+                            patient records, tracking clinical trials, or supporting public health initiatives, our
+                            solutions empower organizations to harness their data effectively.
+                        </p>
+                        <p data-key="yruipfkf">
+                            Beyond secure storage, we focus on adaptability, ensuring our systems grow with your data
+                            needs
+                            while maintaining optimal performance. With a commitment to innovation and a deep
+                            understanding
+                            of healthcare challenges, Health Metrica delivers reliable, secure, and efficient data
+                            management solutions that drive better decision-making and improved outcomes in the medical
+                            field.
+                        </p>
+                    </div>
+                    <hr class="mt-15 mb-15">
+                    <div class="card color-dark" id="service2" data-aos="fade-down">
+                        <figure><img src="./Images/imageHealthMetrica/service2.jpeg" width="1050" height="600"
+                                alt="slider1"></figure>
+                        <h5 data-key="hfjfrf">Data Analysis and Visualization</h5>
+                        <p data-key="kdnfhfj">
+                           <span data-key="hgjkg">At </span> Health Metrica, <span data-key="dderrf">  we specialize in data analysis and visualization, providing healthcare
+                            professionals with the tools and insights needed to make informed decisions. Our solutions
+                            are designed to transform complex data into clear, actionable visuals, empowering teams to
+                            identify trends, uncover opportunities, and address challenges effectively. 
+                        </span>
+                        </p>
+                        <p data-key="hgjkgFF">
+                            Through advanced analytics techniques, we enable healthcare providers to better understand
+                            patient data, optimize care processes, and improve outcomes. Whether it’s tracking
+                            performance metrics, analyzing population health trends, or supporting clinical
+                            decision-making, our tailored approaches ensure meaningful insights are always at your
+                            fingertips.
+                        </p>
+                        <p data-key="fbghjkg">
+                            Our focus on user-friendly design ensures that even complex data becomes accessible and
+                            actionable. By combining expertise in analytics with cutting-edge visualization tools,
+                            Health Metrica helps organizations not only interpret data but also drive impactful changes.
+                            With our solutions, professionals are equipped to enhance patient care and advance
+                            healthcare delivery.
+                        </p>
+                    </div>
+                    <hr class="mt-15 mb-15">
+                    <div class="card color-dark" id="service3" data-aos="fade-up">
+                        <figure><img src="./Images/imageHealthMetrica/service3.jpg" width="1050" height="600"
+                                alt="slider2"></figure>
+                        <h5 data-key="hdfvgjkg">Application Development</h5>
+                        <p >
+                            At Health Metrica, we design cutting-edge applications tailored for healthcare and public
+                            health needs. Our solutions empower professionals by enabling accurate diagnoses,
+                            comprehensive patient risk assessments, and effective epidemic management. These
+                            applications are built to streamline decision-making processes, ensuring healthcare
+                            providers can act swiftly and effectively.
+                        </p>
+                        <p data-key="bnfdhgjkg">
+                            Our innovative tools are developed with a focus on precision and usability, helping
+                            professionals analyze complex medical data and deliver personalized care. By integrating
+                            advanced algorithms and user-friendly interfaces, our applications support healthcare
+                            systems in
+                            tackling critical challenges, from managing patient care to addressing public health crises.
+                        </p>
+                        <p>
+                          <span data-key="bnchffdffhgjkg">  In addition to diagnostic support, our solutions aid in predicting and mitigating potential
+                            disease outbreaks, enhancing preparedness and response strategies.</span> Health Metrica <span data-key="bnchffdffhgjkg"> is
+                            committed
+                            to transforming healthcare through technology, delivering applications that improve
+                            outcomes,
+                            strengthen systems, and advance public health initiatives globally.</span>
+                        </p>
+                    </div>
+                    <hr class="mt-15 mb-15">
+                    <div class="card color-dark" id="service4" data-aos="fade-down">
+                        <figure><img src="./Images/imageHealthMetrica/service4.jpg" width="1050" height="600"
+                                alt="slider3"></figure>
+                        <h5 data-key="bngjkg">Expert Consulting Services </h5>
+                        <p>
+                            Health Metrica <span data-key="bnfnggjkg"> offers expert consulting services in bioinformatics, epidemiology, and health
+                            data analytics, empowering healthcare organizations to leverage data for strategic
+                            decision-making and improved outcomes. Our team of specialists provides tailored guidance,
+                            ensuring organizations can navigate complex data landscapes effectively.
+                        </span>
+                        </p>
+                        <p data-key="bfngbgjkg">
+                            In bioinformatics, we help organizations analyze genetic and molecular data to advance
+                            research and personalized medicine. Our expertise in epidemiology supports public health
+                            efforts, offering insights to track disease patterns, assess risks, and develop prevention
+                            strategies. Additionally, our proficiency in health data analytics enables healthcare
+                            providers to optimize operations, enhance patient care, and drive evidence-based decisions.
+
+                        </p>
+                        <p>
+                          <span data-key="bngjkg"> By combining domain expertise with cutting-edge tools</span>, Health Metrica <span data-key="bngjdndbkg"> delivers actionable
+                            insights that address unique healthcare challenges. Whether supporting clinical research,
+                            improving public health policies, or refining operational efficiency, our consulting
+                            services ensure that data becomes a powerful asset for progress.</span>
+                        </p>
+
+                    </div>
+
+                </div>
             </div>
-        </div>
-        
-        <div class="service">
-            <h3>Application Development</h3>
-            <p>We develop applications that support decision-making in healthcare and public health-related fields. Our innovative solutions assist healthcare professionals in accurate diagnosis, patient risk assessment, and epidemic management.</p>
-            <div class="image-container">
-                <img src="LLM_tools/possessed-photography-g29arbbvPjo-unsplash.jpg" alt="Application Development" width="600">
-            </div>
-        </div>
-    </section>
+        </section>
+        <!-- ====== End of 1.7. Services section ====== -->
 
-    <footer>
-        <p>&copy; 2024 Health Metrica. All rights reserved.</p>
-    </footer>
+        <!-- ====== 1.15. Footer section ====== -->
+        <footer>
+            <div class="footer-menu">
+                <div class="container">
+                    <div class="flex flex-start footer-center">
+                        <div class="w-33 flex flex-col gap-2 flex-start">
+                            <a href="index.html"><img src="Images/logo.png" alt="footer-logo"></a>
+                            <p>
+                                Health Metrica <span data-key="bfffjghngngjkg">revolutionizes healthcare with secure data solutions, advanced analytics,
+                                    and innovative tools, empowering professionals to enhance patient care and improve
+                                    health outcomes globally.</span>  
+                            </p>
+                            <span class="flex gap-2">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </span>
+                        </div>
+                        <div class="w-16 mt-1">
+                            <h4>Quick Links</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li><a data-key="bfngngjkg" href="#">Home</a></li>
+                                <li><a data-key="bndkflrgjkg" href="#">About</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-16 mt-45 flex-end">
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a data-key="bnfngjgjkg" href="contactUs.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-33 mt-1 flex flex-col flex-start">
+                            <h4 data-key="bngfnvjkg">Get Connected</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li>
+                                    <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                                    <a href="#" class="text-lowercase">healthMetrica@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                                    <a href="#">+49 1521 9221951</a>
+                                </li>
+                                <li>
+                                    <a data-key="bngjvfkg" href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
+                                    <a data-key="bngfnhjkg" href="#">Office Hours: 8AM - 11PM
+                                        Sunday - Weekend Day</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container flex flex-sb gap-2 flex-wrap">
+                    <h6>Copyright © 2024 HealthMetrica All Rights Reserved.
+                    </h6>
+                    <marquee>
+                        <h6 data-key="bngjdfkg">Powered By<b> Kekre Kouamé Gboko Roland</b></h6>
+                    </marquee>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- end site wrapper -->
+
+
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2"><i
+        class="fa-solid fa-arrow-turn-up"></i></button>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 150,
+        duration: 1250,
+        once: true,
+    });
+</script>
+
+<!-- jquery js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- jquery min js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- slick carousel min js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+<!-- Translate -->
+<script src="js/lang.js"></script>
+
+<!-- custom js -->
+<script src="js/script.js"></script>
+
 </body>
+
 </html>

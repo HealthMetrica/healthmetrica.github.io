@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Metrica</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive_service.css">
+    <link rel="shortcut icon" href="Images/fave_icon.png" type="image/x-icon">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+        <div class="header-index">
+            <!-- ====== 1.1. Header section ====== -->
+            <header>
+                <nav class="container navbar">
+                    <div class="container-nav flex">
+                        <!-- site logo -->
+                        <a class="navbar-logo" href="/" style="background-color: aliceblue; padding:10px"><img
+                                src="Images/logo.png" alt="logo"></a>
+                        <button class="navbar-toggler" onclick="openNav()" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <!-- menus -->
+                        <ul class="navbar-nav flex">
+                            <li><a data-key="h" class="nav-link" href="index.html">Home</a></li>
+                            <li><a data-key="a" class="nav-link" href="index.html#about">About</a></li>
+                            <li><a data-key="c" class="nav-link" href="contactUs.html">Contact</a></li>
+                            <li>
+                                <select class="language-switcher" id="languageSelector">
+                                    <option selected>Lang+</option>
+                                    <option id="lang-en" class="lang-btn" value="en">🇬🇧 En </option>
+                                    <option id="lang-fr" class="lang-btn" value="fr">🇫🇷 Fr</option>
+                                </select>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a data-key="s" class="dropdown-item" href="index.html#service">Services</a>
+                                    </li>
+                                    <li><a data-key="faq" class="dropdown-item" href="index.html#faq">FAQ</a></li>
+                                    <li><a data-key="don" class="dropdown-item active" href="donation.html">Donation</a>
+                                    </li>
+                                    <li><a data-key="p" class="dropdown-item" href="comingsoon.html">Parterns</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex nav-right">
+                        <p data-key="call">Call Us: <span>+225 05 75 43 20 43</span></p>
+                        <!-- header buttons -->
+                        <i onclick="open_search_bar()" class="fa-solid fa-magnifying-glass"></i>
+                        <i onclick="open_right_side()" class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+                <!-- Sidebar -->
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="Images/logo.png" alt="logo"></a>
+                        <button class="closebtn btn_hover1" onclick="closeNav()"><i
+                                class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div>
+                        <!-- side menus -->
+                        <ul>
+                            <li><a data-key="h" class="nav-link active" href="index.html">Home</a></li>
+                            <li><a data-key="a" class="nav-link" href="index.html#about">About</a></li>
+                            <li><a data-key="c" class="nav-link" href="contactUs.html">Contact</a></li>
+                            <li>
+                                <select class="language-switcher" id="languageSelector">
+                                    <option selected>Lang+</option>
+                                    <option id="lang-en" class="lang-btn" value="en">🇬🇧 En </option>
+                                    <option id="lang-fr" class="lang-btn" value="fr">🇫🇷 Fr</option>
+                                </select>
+                            </li>
+                            <li class="pages"><a data-key="m" href="#">More</a></li>
+                            <li class="collapse_btn">
+                                <a class="nav-link plus_collapse" data-bs-toggle="collapse" href="javascript:void(0);"
+                                    onclick="toggleCollapse('pages')" aria-expanded="false" aria-controls="pages">
+                                    <i class="fa-solid fa-plus"></i>
+                                </a>
+                                <div class="collapse" id="pages">
+                                    <ul>
+                                        <li><a data-key="s" class="nav-link" href="index.html#service">Services</a></li>
+                                        <li><a data-key="faq" class="nav-link" href="index.html#faq">FAQ</a></li>
+                                        <li><a data-key="don" class="nav-link active" href="donation.html">Donation</a>
+                                        </li>
+                                        <li><a data-key="p" class="nav-link" href="comingsoon.html">Parterns</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- searchbar -->
+                <div id="search-bar">
+                    <div class="btn_hover1" onclick="close_search_bar()"><i class="fa-solid fa-xmark"></i></div>
+                    <form method="search" action="#">
+                        <input type="search" required placeholder="Search...">
+                        <button type="submit" data-key="search" class="btn_hover1">Search</button>
+                    </form>
+                </div>
+
+                <!-- Right Sidebar -->
+                <section class="header-right-sidebar" id="right_side">
+                    <div class="flex flex-sb">
+                        <a href="/"><img src="Images/right-side-logo.png" alt="logo"></a>
+                        <button class="close_right_sidebar fa-solid fa-xmark" onclick="close_right_sade()"> </button>
+                    </div>
+                    <p data-key="hmrhwsds">
+                        Health Metrica revolutionizes healthcare with secure data solutions, advanced analytics, and
+                        innovative tools, empowering professionals to enhance patient care and improve health outcomes
+                        globally.
+                    </p>
+                    <a data-key="" about_us href="index.html#about" class="btn_hover1">About Us</a>
+                    <hr>
+                    <h4 data-key="cd">Connected details:</h4>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                            <a href="#" class="text-lowercase">healthMetrica@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                            <a href="#">+49 1521 9221951</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
+                            <a data-key="date" href="#">Office Hours: 8AM - 11PM Sunday -
+                                Weekend Day</a>
+                        </li>
+                    </ul>
+                    <span class="flex">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </span>
+                </section>
+            </header>
+            <!-- ====== End of 1.1. Header section ====== -->
+        </div>
+
+        <!-- ====== 1.7. Services section ====== -->
+        <section class="service" id="service">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="flex gap-1">
+                                <hr class="service-hr1">
+                                <h5 data-key="don">Donation</h5>
+                            </div>
+                            <h2 class="mt-15"></h2>
+                            <p class="mt-15">
+                                <strong data-key="don_description">
+                                    Your donation helps us revolutionize healthcare in underserved communities by
+                                    providing cutting-edge data solutions, advanced training programs, and innovative
+                                    tools for better patient outcomes. Together, we can address critical challenges,
+                                    improve access to quality care, and drive meaningful change in global health
+                                    systems.
+                                    Every contribution makes a difference. Join us in our mission to transform
+                                    healthcare and create a healthier future for all. Donate today and be part of the
+                                    solution!
+                                </strong>
+                            </p>
+                        </div>
+                        <hr class="mt-15 mb-15">
+                        <p>
+                            <img src="./Images/imageHealthMetrica/54488.jpg" alt="Donation" width="950" height="500">
+                        </p>
+
+                    </div>
+                    <div class="donate" data-aos="zoom-in">
+                        <a data-key="dona" href="comingsoon.html" class="btn_hover2">DONATE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.7. Services section ====== -->
+
+        <!-- ====== 1.15. Footer section ====== -->
+        <footer>
+            <div class="footer-menu">
+                <div class="container">
+                    <div class="flex flex-start footer-center">
+                        <div class="w-33 flex flex-col gap-2 flex-start">
+                            <a href="index.html"><img src="Images/logo.png" alt="footer-logo"></a>
+                            <p data-key="hmrhwsds">
+                                Health Metrica revolutionizes healthcare with secure data solutions, advanced analytics,
+                                and innovative tools, empowering professionals to enhance patient care and improve
+                                health outcomes globally.
+                            </p>
+                            <span class="flex gap-2">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </span>
+                        </div>
+                        <div class="w-16 mt-1">
+                            <h4>Quick Links</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li><a data-key="h" href="#">Home</a></li>
+                                <li><a data-key="a" href="#">About</a></li>
+                                <li>
+                                    <select class="language-switcher" id="languageSelector">
+                                        <option selected>Lang+</option>
+                                        <option id="lang-en" class="lang-btn" value="en">🇬🇧 En </option>
+                                        <option id="lang-fr" class="lang-btn" value="fr">🇫🇷 Fr</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-16 mt-45 flex-end">
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li><a data-key="faq" href="#faq">FAQ</a></li>
+                                <li><a data-key="co" href="contactUs.html">Contact</a></li>
+                                <li><a data-key="don" class="dropdown-item" href="donation.html">Donation</a></li>
+                            </ul>
+                        </div>
+                        <div class="w-33 mt-1 flex flex-col flex-start">
+                            <h4 data-key="gc">Get Connected</h4>
+                            <ul class="flex flex-col gap-2 flex-start">
+                                <li>
+                                    <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                                    <a href="#" class="text-lowercase">healthMetrica@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa-regular fa-envelope"></i></a>
+                                    <a href="#">+49 1521 9221951</a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa-sharp fa-regular fa-clock"></i></a>
+                                    <a data-key="date" href="#">Office Hours: 8AM - 11PM
+                                        Sunday - Weekend Day</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container flex flex-sb gap-2 flex-wrap">
+                    <h6 data-key="copy">Copyright © 2024 HealthMetrica All Rights Reserved.
+                    </h6>
+                    <marquee>
+                        <h6 data-key="pow">Powered By<b> Kekre Kouamé Gboko Roland</b></h6>
+                    </marquee>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- end site wrapper -->
+
+
+    <!-- button back to top -->
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2"><i
+            class="fa-solid fa-arrow-turn-up"></i></button>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <!-- Translate -->
+    <script src="js/lang.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
