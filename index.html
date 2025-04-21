@@ -4,45 +4,291 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Metrica</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="health-metrica-high-resolution-logo-transparent.png" type="image/png">
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Health Metrica</h1>
-        <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="faq.html">FAQ's</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="./" onclick="window.location.reload(true); return false;"><img src="health-metrica-high-resolution-logo-transparent.png" alt="Health Metrica Logo"></a>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
-    
-    <!-- Google tag (gtag.js) -->
-        <script async src='https://www.googletagmanager.com/gtag/js?id=G-VGTSCPCLQQ'></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-VGTSCPCLQQ');
-        </script>
-    
-    <div class="welcome-text">
-        <h2>Welcome!</h2>
-        <p>We're excited to have you here at Health Metrica. Explore our website to learn more about our innovative solutions in the healthcare industry.</p>
+    <!-- Hero Section -->
+<section id="hero">
+    <div class="hero-background">
+        <div class="background-slide active" style="background-image: url('https://images.unsplash.com/photo-1666886573206-e31fe221db88?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+        <div class="background-slide active" style="background-image: url('https://images.unsplash.com/photo-1606206591513-adbfbdd7a177?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+        <div class="background-slide" style="background-image: url('https://images.unsplash.com/photo-1666886573256-ff093806ec6b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+        <div class="background-slide" style="background-image: url('https://images.unsplash.com/photo-1581094289810-adf5d25690e3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"></div>
+        <div class="background-slide active" style="background-image: url('myriam-zilles-KltoLK6Mk-g-unsplash.jpg')"></div>
+        <div class="background-slide active" style="background-image: url('https://img.freepik.com/photos-gratuite/tubes-essai-medicaux-du-sang-bureau-laboratoire_482257-9074.jpg?t=st=1744908786~exp=1744912386~hmac=162901cabcf933d9f22d288102b0f454bb6b0adc53ca380f02538ec24ff49000&w=1380')"></div>
     </div>
-    <section id="welcome">
-        <div class="background-image"></div>
-         <div class="mission-text">
-        <h2>Our Mission</h2>
-            <p>At Health Metrica, our mission is to leverage artificial intelligence to improve healthcare in resource-limited areas. We believe in harnessing the power of technology to address the unique challenges faced by healthcare systems around the world.</p>
+    <div class="container">
+        <div class="hero-content">
+            <h1>Welcome to Health Metrica</h1>
+            <p>Innovative artificial intelligence solutions to improve healthcare in resource-limited areas</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn">Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <p>Discover our passion for transforming healthcare</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="Health Metrica Team">
+                </div>
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>At Health Metrica, we are a passionate team of healthcare professionals, data scientists, and technology experts who share a common vision: making quality healthcare accessible to everyone, everywhere in the world.</p>
+                    <p>Founded in 2022, our company is committed to developing innovative solutions that address the unique challenges of healthcare systems, particularly in resource-limited regions.</p>
+                </div>
+            </div>
+            <div class="mission-vision">
+                <div class="mission">
+                    <h4>Our Mission</h4>
+                    <p>Harness the power of artificial intelligence to improve healthcare in resource-limited areas by creating accessible and tailored technologies that empower healthcare professionals and improve patient outcomes.</p>
+                </div>
+                <div class="vision">
+                    <h4>Our Vision</h4>
+                    <p>A world where access to quality healthcare is not limited by geography or resources, where technology empowers communities, and where data is transformed into powerful tools to save lives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions for healthcare data management and analysis</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Data Storage and Warehousing</h3>
+                        <p>We provide data warehousing services mainly for healthcare facilities and other sectors. Our solutions offer state-of-the-art encryption protocols and stringent security measures to ensure the confidentiality and integrity of all healthcare data.</p>
+                        <a href="#contact" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Data Analysis and Visualization</h3>
+                        <p>We specialize in data analysis and visualization, empowering professionals with practical skills to drive informed decisions and improve patient outcomes.</p>
+                        <a href="#contact" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Consulting Services</h3>
+                        <p>We offer consulting services in Bioinformatics, epidemiology, and health data analytics. Our team provides expert guidance to healthcare organizations seeking to leverage data for strategic decision-making.</p>
+                        <a href="#contact" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Application Development</h3>
+                        <p>We develop applications that support decision-making in healthcare and public health-related fields. Our innovative solutions assist healthcare professionals in accurate diagnosis and epidemic management.</p>
+                        <a href="#contact" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to your most common questions</p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        How secure are your data storage and warehousing solutions?
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Our data platforms are equipped with state-of-the-art encryption protocols and stringent security measures to ensure the confidentiality and integrity of all healthcare data. We comply with all major healthcare data protection regulations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        What skills will I gain from your data analytics training programs?
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Our training programs are tailored to equip healthcare professionals with practical skills in data analytics, enhancing their ability to drive informed decisions and improve patient outcomes. You'll learn data visualization, statistical analysis, and interpretation techniques specific to healthcare data.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        How do your language-based tools support healthcare providers?
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Our language-based tools are continuously evolving to meet the dynamic needs of healthcare providers, enabling more accurate diagnostics and personalized patient care plans. They assist in processing medical literature, patient records, and research data efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        How can your tools help in epidemic management?
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Our epidemic circumvention tools are designed to assist healthcare professionals in identifying and mitigating potential disease outbreaks, enhancing public health preparedness and response. They provide real-time data analysis, pattern recognition, and predictive modeling for disease spread.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Questions or need information? We're here to help</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Our Details</h3>
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>UAC NENIN</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            <p>+229 01 01 01 01</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <p>contact@healthmetrica.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow Us</h4>
+                        <div>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" action="contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Health Metrica. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Health Metrica</h4>
+                    <p>Innovative solutions for healthcare data management and analysis</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Data Storage</a></li>
+                        <li><a href="#services">Data Analysis</a></li>
+                        <li><a href="#services">Consulting</a></li>
+                        <li><a href="#services">App Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Health Metrica. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript for the site -->
+<script src="script.js"></script>
 </body>
 </html>
