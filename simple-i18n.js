@@ -1,6 +1,6 @@
 // Solution i18n simple sans dépendances externes
 const SimpleI18n = {
-    currentLang: 'en',
+    currentLang: 'fr', // Défaut français comme dans l'index
     
     translations: {
         en: {
@@ -16,42 +16,49 @@ const SimpleI18n = {
             "hero.contact_button": "Contact Us",
             
             "about.title": "About Us",
-            "about.subtitle": "Discover our passion for transforming healthcare",
+            "about.subtitle": "Driving Healthcare Innovation with Secure Data Solutions and Advanced Warehousing for Reliable Medical Data Management",
             "about.who_we_are": "Who We Are",
-            "about.description": "At Health Metrica, we are a passionate team of healthcare professionals, data scientists, and technology experts who share a common vision: making quality healthcare accessible to everyone, everywhere in the world.",
+            "about.description": "Welcome to Health Metrica, where innovation transforms healthcare. We deliver advanced data solutions to revolutionize the medical field. Our expertise in secure data storage and efficient warehousing ensures reliable management of healthcare information. By leveraging cutting-edge technology, we empower healthcare systems worldwide, enabling better decision-making and improved patient outcomes. At Health Metrica, we are committed to driving meaningful advancements and addressing the unique challenges of modern healthcare systems.",
             "about.founded": "Founded in 2022, our company is committed to developing innovative solutions that address the unique challenges of healthcare systems, particularly in resource-limited regions.",
-            "about.mission": "Our Mission",
-            "about.mission_text": "Harness the power of artificial intelligence to improve healthcare in resource-limited areas by creating accessible and tailored technologies that empower healthcare professionals and improve patient outcomes.",
-            "about.vision": "Our Vision",
-            "about.vision_text": "A world where access to quality healthcare is not limited by geography or resources, where technology empowers communities, and where data is transformed into powerful tools to save lives.",
+            "about.mission": "CUSTOMIZED SOLUTIONS",
+            "about.mission_text": "Health Metrica offers customized solutions thanks to artificial intelligence, optimizing healthcare, particularly in resource-limited areas, for a lasting impact.",
+            "about.vision": "EXPERT TEAM",
+            "about.vision_text": "Health Metrica's expert team combines AI expertise and data management skills to create innovative solutions, addressing critical healthcare system needs in resource-limited areas worldwide.",
             
             "services.title": "Our Services",
-            "services.subtitle": "Comprehensive solutions for healthcare data management and analysis",
+            "services.subtitle": "At Health Metrica, our mission is to leverage artificial intelligence to improve healthcare in resource-limited areas. We believe in harnessing the power of technology to address the unique challenges faced by healthcare systems around the world.",
             "services.storage_title": "Data Storage and Warehousing",
-            "services.storage_text": "We provide data warehousing services mainly for healthcare facilities and other sectors. Our solutions offer state-of-the-art encryption protocols and stringent security measures to ensure the confidentiality and integrity of all healthcare data.",
+            "services.storage_text": "We offer advanced data warehousing services for healthcare and other sectors, featuring cutting-edge encryption and robust security measures to ensure confidentiality and data integrity.",
             "services.analysis_title": "Data Analysis and Visualization",
-            "services.analysis_text": "We specialize in data analysis and visualization, empowering professionals with practical skills to drive informed decisions and improve patient outcomes.",
+            "services.analysis_text": "We specialize in data analysis and visualization, equipping professionals with actionable insights to make informed decisions and enhance patient outcomes.",
             "services.consulting_title": "Consulting Services",
-            "services.consulting_text": "We offer consulting services in Bioinformatics, epidemiology, and health data analytics. Our team provides expert guidance to healthcare organizations seeking to leverage data for strategic decision-making.",
+            "services.consulting_text": "We provide expert consulting in bioinformatics, epidemiology, and health data analytics, empowering healthcare organizations to harness data for strategic decision-making and improved outcomes.",
             "services.app_title": "Application Development",
-            "services.app_text": "We develop applications that support decision-making in healthcare and public health-related fields. Our innovative solutions assist healthcare professionals in accurate diagnosis and epidemic management.",
+            "services.app_text": "We create innovative applications for healthcare and public health, enabling accurate diagnoses, patient risk assessments, and effective epidemic management to support informed decision-making.",
             "services.learn_more": "Learn More",
             
             "faq.title": "Frequently Asked Questions",
-            "faq.subtitle": "Answers to your most common questions",
-            "faq.question1": "How secure are your data storage and warehousing solutions?",
-            "faq.answer1": "Our data platforms are equipped with state-of-the-art encryption protocols and stringent security measures to ensure the confidentiality and integrity of all healthcare data. We comply with all major healthcare data protection regulations.",
-            "faq.question2": "What skills will I gain from your data analytics training programs?",
-            "faq.answer2": "Our training programs are tailored to equip healthcare professionals with practical skills in data analytics, enhancing their ability to drive informed decisions and improve patient outcomes. You'll learn data visualization, statistical analysis, and interpretation techniques specific to healthcare data.",
-            "faq.question3": "How do your language-based tools support healthcare providers?",
-            "faq.answer3": "Our language-based tools are continuously evolving to meet the dynamic needs of healthcare providers, enabling more accurate diagnostics and personalized patient care plans. They assist in processing medical literature, patient records, and research data efficiently.",
-            "faq.question4": "How can your tools help in epidemic management?",
-            "faq.answer4": "Our epidemic circumvention tools are designed to assist healthcare professionals in identifying and mitigating potential disease outbreaks, enhancing public health preparedness and response. They provide real-time data analysis, pattern recognition, and predictive modeling for disease spread.",
+            "faq.subtitle": "Find answers to common questions about our innovative healthcare solutions, including data security, training programs, diagnostic tools, and epidemic prevention. Discover how Health Metrica empowers healthcare providers with cutting-edge technology and expertise.",
+            "faq.question1": "How does health metrica ensure the security of healthcare data in its storage solutions?",
+            "faq.answer1": "Our data platforms utilize state-of-the-art encryption protocols and stringent security measures to guarantee the confidentiality and integrity of all healthcare data.",
+            "faq.question2": "What skills do your data analytics training programs provide to healthcare professionals?",
+            "faq.answer2": "Our programs equip healthcare professionals with practical data analytics skills to drive informed decisions and improve patient outcomes through evidence-based insights.",
+            "faq.question3": "How do the language-based tools improve patient care?",
+            "faq.answer3": "Our evolving language-based tools enable healthcare providers to achieve more accurate diagnostics and create personalized care plans tailored to individual patient needs.",
+            "faq.question4": "How do epidemic circumvention tools enhance public health responses?",
+            "faq.answer4": "These tools assist in identifying and mitigating potential disease outbreaks, improving preparedness and enabling rapid, effective responses to public health threats.",
             
             "contact.title": "Contact Us",
-            "contact.subtitle": "Questions or need information? We're here to help",
+            "contact.subtitle": "Questions or need information? We're here to help <br>Available 24/7",
             "contact.our_details": "Our Details",
-            "contact.address": "UAC NENIN",
+            "contact.address": `Main registration with RCCM: 25-06-2024<br>
+Trade register number: COTONOU No. RB/ABC/24 A 109187<br>
+Address: Lot 73, Plot No. F, House: ATLANTIQUE, ABOMEY-CALAVI, GODOMEY, AGBO-CODJI-SEDEGBE, Benin.<br>
+RCCM: RB/ABC/24 A 109187 dated 25-06-2024.<br>
+<strong>Benin: +229 01 46 09 74 89</strong><br>
+<strong>Ivory Coast: +225 05 75 43 20 43</strong><br>
+<strong>USA: +49 1521 9221951</strong><br>`,
+  "contact.office_hours": "Office Hours: 8AM - 11PM Sunday - Weekend Day",
             "contact.follow_us": "Follow Us",
             "contact.send_message": "Send Us a Message",
             "contact.form_name": "Name",
@@ -63,7 +70,8 @@ const SimpleI18n = {
             "footer.tagline": "Innovative solutions for healthcare data management and analysis",
             "footer.quick_links": "Quick Links",
             "footer.services": "Services",
-            "footer.copyright": "2024 Health Metrica. All rights reserved.",
+            "footer.copyright": "2025 Health Metrica. All rights reserved.",
+            "footer.credit_prefix": "Designed and developed by",
             
             // Messages de validation
             "validation.fillAllFields": "Please fill in all fields",
@@ -86,42 +94,49 @@ const SimpleI18n = {
             "hero.contact_button": "Contactez-nous",
             
             "about.title": "À propos de nous",
-            "about.subtitle": "Découvrez notre passion pour transformer les soins de santé",
+            "about.subtitle": "Stimuler l'innovation en santé avec des solutions de données sécurisées et un entreposage avancé pour une gestion fiable des données médicales",
             "about.who_we_are": "Qui sommes-nous",
-            "about.description": "Chez Health Metrica, nous sommes une équipe passionnée de professionnels de la santé, de scientifiques des données et d'experts en technologie qui partagent une vision commune : rendre des soins de santé de qualité accessibles à tous, partout dans le monde.",
+            "about.description": "Bienvenue chez Health Metrica, où l'innovation transforme les soins de santé. Nous fournissons des solutions de données avancées pour révolutionner le domaine médical. Notre expertise en stockage sécurisé de données et en entreposage efficace garantit une gestion fiable des informations de santé. En exploitant une technologie de pointe, nous donnons les moyens aux systèmes de santé du monde entier, permettant une meilleure prise de décision et des résultats améliorés pour les patients. Chez Health Metrica, nous nous engageons à stimuler des avancées significatives et à relever les défis uniques des systèmes de santé modernes.",
             "about.founded": "Fondée en 2022, notre entreprise s'engage à développer des solutions innovantes qui répondent aux défis uniques des systèmes de santé, en particulier dans les régions à ressources limitées.",
-            "about.mission": "Notre Mission",
-            "about.mission_text": "Exploiter la puissance de l'intelligence artificielle pour améliorer les soins de santé dans les zones à ressources limitées en créant des technologies accessibles et adaptées qui autonomisent les professionnels de la santé et améliorent les résultats pour les patients.",
-            "about.vision": "Notre Vision",
-            "about.vision_text": "Un monde où l'accès à des soins de santé de qualité n'est pas limité par la géographie ou les ressources, où la technologie autonomise les communautés et où les données sont transformées en outils puissants pour sauver des vies.",
+            "about.mission": "SOLUTIONS PERSONNALISÉES",
+            "about.mission_text": "Health Metrica propose des solutions personnalisées grâce à l'intelligence artificielle, optimisant les soins de santé, particulièrement dans les zones à ressources limitées, pour un impact durable.",
+            "about.vision": "ÉQUIPE D'EXPERTS",
+            "about.vision_text": "L'équipe d'experts de Health Metrica combine l'expertise en IA et les compétences en gestion de données pour créer des solutions innovantes, répondant aux besoins critiques des systèmes de santé dans les zones à ressources limitées du monde entier.",
             
             "services.title": "Nos Services",
-            "services.subtitle": "Solutions complètes pour la gestion et l'analyse des données de santé",
+            "services.subtitle": "Chez Health Metrica, notre mission est d'exploiter l'intelligence artificielle pour améliorer les soins de santé dans les zones à ressources limitées. Nous croyons en l'exploitation de la puissance de la technologie pour répondre aux défis uniques auxquels font face les systèmes de santé dans le monde.",
             "services.storage_title": "Stockage et entrepôt de données",
-            "services.storage_text": "Nous fournissons des services d'entrepôt de données principalement pour les établissements de santé et d'autres secteurs. Nos solutions offrent des protocoles de chiffrement de pointe et des mesures de sécurité strictes pour garantir la confidentialité et l'intégrité de toutes les données de santé.",
+            "services.storage_text": "Nous offrons des services d'entreposage de données avancés pour les soins de santé et d'autres secteurs, avec un chiffrement de pointe et des mesures de sécurité robustes pour garantir la confidentialité et l'intégrité des données.",
             "services.analysis_title": "Analyse et visualisation de données",
-            "services.analysis_text": "Nous sommes spécialisés dans l'analyse et la visualisation de données, donnant aux professionnels les compétences pratiques nécessaires pour prendre des décisions éclairées et améliorer les résultats pour les patients.",
+            "services.analysis_text": "Nous sommes spécialisés dans l'analyse et la visualisation de données, équipant les professionnels d'insights exploitables pour prendre des décisions éclairées et améliorer les résultats pour les patients.",
             "services.consulting_title": "Services de conseil",
-            "services.consulting_text": "Nous proposons des services de conseil en bioinformatique, épidémiologie et analyse de données de santé. Notre équipe fournit des conseils d'experts aux organisations de santé cherchant à exploiter les données pour la prise de décision stratégique.",
+            "services.consulting_text": "Nous fournissons des conseils d'experts en bioinformatique, épidémiologie et analyse de données de santé, permettant aux organisations de santé d'exploiter les données pour la prise de décision stratégique et l'amélioration des résultats.",
             "services.app_title": "Développement d'applications",
-            "services.app_text": "Nous développons des applications qui soutiennent la prise de décision dans les domaines de la santé et de la santé publique. Nos solutions innovantes aident les professionnels de santé dans le diagnostic précis et la gestion des épidémies.",
+            "services.app_text": "Nous créons des applications innovantes pour les soins de santé et la santé publique, permettant des diagnostics précis, des évaluations des risques des patients et une gestion efficace des épidémies pour soutenir la prise de décision éclairée.",
             "services.learn_more": "En savoir plus",
             
             "faq.title": "Foire aux questions",
-            "faq.subtitle": "Réponses à vos questions les plus fréquentes",
-            "faq.question1": "Quelle est la sécurité de vos solutions de stockage de données ?",
-            "faq.answer1": "Nos plateformes de données sont équipées de protocoles de chiffrement de pointe et de mesures de sécurité strictes pour garantir la confidentialité et l'intégrité de toutes les données de santé. Nous respectons toutes les principales réglementations de protection des données de santé.",
-            "faq.question2": "Quelles compétences vais-je acquérir dans vos programmes de formation en analyse de données ?",
-            "faq.answer2": "Nos programmes de formation sont conçus pour doter les professionnels de santé de compétences pratiques en analyse de données, améliorant leur capacité à prendre des décisions éclairées et à améliorer les résultats pour les patients. Vous apprendrez la visualisation de données, l'analyse statistique et les techniques d'interprétation spécifiques aux données de santé.",
-            "faq.question3": "Comment vos outils linguistiques aident-ils les prestataires de soins ?",
-            "faq.answer3": "Nos outils linguistiques évoluent continuellement pour répondre aux besoins dynamiques des prestataires de soins, permettant des diagnostics plus précis et des plans de soins personnalisés. Ils aident à traiter efficacement la littérature médicale, les dossiers des patients et les données de recherche.",
-            "faq.question4": "Comment vos outils peuvent-ils aider dans la gestion des épidémies ?",
-            "faq.answer4": "Nos outils de prévention des épidémies sont conçus pour aider les professionnels de santé à identifier et à atténuer les épidémies potentielles, améliorant ainsi la préparation et la réponse en matière de santé publique. Ils fournissent une analyse des données en temps réel, une reconnaissance des modèles et une modélisation prédictive de la propagation des maladies.",
+            "faq.subtitle": "Trouvez des réponses aux questions courantes sur nos solutions de santé innovantes, y compris la sécurité des données, les programmes de formation, les outils de diagnostic et la prévention des épidémies. Découvrez comment Health Metrica donne les moyens aux prestataires de soins avec une technologie et une expertise de pointe.",
+            "faq.question1": "Comment Health Metrica garantit-elle la sécurité des données de santé dans ses solutions de stockage ?",
+            "faq.answer1": "Nos plateformes de données utilisent des protocoles de chiffrement de pointe et des mesures de sécurité strictes pour garantir la confidentialité et l'intégrité de toutes les données de santé.",
+            "faq.question2": "Quelles compétences vos programmes de formation en analyse de données apportent-ils aux professionnels de la santé ?",
+            "faq.answer2": "Nos programmes équipent les professionnels de santé avec des compétences pratiques en analyse de données pour prendre des décisions éclairées et améliorer les résultats pour les patients grâce à des insights basés sur des preuves.",
+            "faq.question3": "Comment les outils basés sur le langage améliorent-ils la prise en charge des patients ?",
+            "faq.answer3": "Nos outils évolutifs basés sur le langage permettent aux prestataires de soins d'obtenir des diagnostics plus précis et de créer des plans de soins personnalisés adaptés aux besoins individuels des patients.",
+            "faq.question4": "Comment les outils de contournement des épidémies renforcent-ils les réponses de santé publique ?",
+            "faq.answer4": "Ces outils aident à identifier et atténuer les épidémies potentielles, améliorant la préparation et permettant des réponses rapides et efficaces aux menaces de santé publique.",
             
             "contact.title": "Contactez-nous",
-            "contact.subtitle": "Des questions ou besoin d'informations ? Nous sommes là pour vous aider",
+            "contact.subtitle": "Des questions ou besoin d'informations ? Nous sommes là pour vous aider <br>Disponible 24h/24 et 7j/7",
             "contact.our_details": "Nos coordonnées",
-            "contact.address": "UAC NENIN",
+            "contact.address": `Enregistrement principal au RCCM : 25-06-2024<br>
+Numéro du registre du commerce : COTONOU No. RB/ABC/24 A 109187<br>
+Adresse : Lot 73, Parcelle No. F, Maison : ATLANTIQUE, ABOMEY-CALAVI, GODOMEY, AGBO-CODJI-SEDEGBE, Bénin.<br>
+RCCM : RB/ABC/24 A 109187 en date du 25-06-2024.<br>
+<strong>Bénin : +229 01 46 09 74 89</strong><br>
+<strong>Côte d'Ivoire : +225 05 75 43 20 43</strong><br>
+<strong>USA : +49 1521 9221951</strong><br>`,
+  "contact.office_hours": "Heures d'ouverture : 8h - 23h Dimanche - Jour de weekend",
             "contact.follow_us": "Suivez-nous",
             "contact.send_message": "Envoyez-nous un message",
             "contact.form_name": "Nom",
@@ -133,7 +148,8 @@ const SimpleI18n = {
             "footer.tagline": "Solutions innovantes pour la gestion et l'analyse des données de santé",
             "footer.quick_links": "Liens rapides",
             "footer.services": "Services",
-            "footer.copyright": "2024 Health Metrica. Tous droits réservés.",
+            "footer.copyright": "2025 Health Metrica. Tous droits réservés.",
+            "footer.credit_prefix": "Conçu et développé par",
             
             // Messages de validation
             "validation.fillAllFields": "Veuillez remplir tous les champs",
@@ -154,7 +170,27 @@ const SimpleI18n = {
         this.currentLang = lang;
         this.translatePage();
         document.documentElement.lang = lang;
+        
+        // Mettre à jour le sélecteur de langue dans l'interface
+        this.updateLanguageSelector(lang);
     },
+    
+    // Fonction pour mettre à jour l'interface du sélecteur de langue
+    updateLanguageSelector(lang) {
+        const currentFlag = document.getElementById('currentFlag');
+        const currentLang = document.getElementById('currentLang');
+        
+        if (currentFlag && currentLang) {
+            if (lang === 'fr') {
+                currentFlag.textContent = '🇫🇷';
+                currentLang.textContent = 'Français';
+            } else {
+                currentFlag.textContent = '🇺🇸';
+                currentLang.textContent = 'English';
+            }
+        }
+    },
+
     
     // Fonction pour traduire toute la page
     translatePage() {
@@ -162,7 +198,12 @@ const SimpleI18n = {
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
             const translation = this.t(key);
-            element.textContent = translation;
+            if (element.dataset.i18nHtml === "true") {
+    element.innerHTML = translation;
+} else {
+    element.textContent = translation;
+}
+
         });
         
         // Mettre à jour les messages de validation
@@ -179,15 +220,42 @@ const SimpleI18n = {
         this.translatePage();
         
         // Configurer le sélecteur de langue
-        const languageSwitcher = document.getElementById('language-switcher');
-        if (languageSwitcher) {
-            languageSwitcher.value = this.currentLang;
-            languageSwitcher.addEventListener('change', (e) => {
-                this.changeLanguage(e.target.value);
-            });
-        }
+        this.setupLanguageSelector();
         
-        console.log('SimpleI18n initialisé');
+        console.log('SimpleI18n initialisé avec la langue:', this.currentLang);
+    },
+    
+    // Configuration du sélecteur de langue
+    setupLanguageSelector() {
+        const langBtn = document.getElementById('langBtn');
+        const langDropdown = document.getElementById('langDropdown');
+        const langOptions = document.querySelectorAll('.lang-option');
+        
+        if (langBtn && langDropdown) {
+            // Toggle dropdown
+            langBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langDropdown.classList.toggle('show');
+            });
+            
+            // Fermer dropdown si clic ailleurs
+            document.addEventListener('click', () => {
+                langDropdown.classList.remove('show');
+            });
+            
+            // Gérer la sélection de langue
+            langOptions.forEach(option => {
+                option.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const selectedLang = option.getAttribute('data-lang');
+                    this.changeLanguage(selectedLang);
+                    langDropdown.classList.remove('show');
+                });
+            });
+            
+            // Mettre à jour l'affichage initial
+            this.updateLanguageSelector(this.currentLang);
+        }
     }
 };
 
