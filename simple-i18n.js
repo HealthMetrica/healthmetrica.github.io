@@ -11,7 +11,7 @@ const SimpleI18n = {
             "menu.contact": "Contact",
             
             "hero.title": "Welcome to Health Metrica",
-            "hero.subtitle": "Innovative artificial intelligence solutions to improve healthcare in resource-limited areas",
+            "hero.subtitle": "Innovative Artificial Intelligence Solutions for Better Healthcare in Resource-Limited Areas",
             "hero.services_button": "Our Services",
             "hero.contact_button": "Contact Us",
             
@@ -32,9 +32,9 @@ const SimpleI18n = {
             "services.analysis_title": "Data Analysis and Visualization",
             "services.analysis_text": "We specialize in data analysis and visualization, equipping professionals with actionable insights to make informed decisions and enhance patient outcomes.",
             "services.consulting_title": "Consulting Services",
-            "services.consulting_text": "We provide expert consulting in bioinformatics, epidemiology, and health data analytics, empowering healthcare organizations to harness data for strategic decision-making and improved outcomes.",
+            "services.consulting_text": "Our experts in bioinformatics, epidemiology and medical data analysis support healthcare professionals in strategic decision-making and improving their performance.",
             "services.app_title": "Application Development",
-            "services.app_text": "We create innovative applications for healthcare and public health, enabling accurate diagnoses, patient risk assessments, and effective epidemic management to support informed decision-making.",
+            "services.app_text": "We create innovative applications for healthcare pathways and public health, enabling accurate diagnoses, risk factor assessment and effective epidemic management.",
             "services.learn_more": "Learn More",
             
             "faq.title": "Frequently Asked Questions",
@@ -51,10 +51,8 @@ const SimpleI18n = {
             "contact.title": "Contact Us",
             "contact.subtitle": "Questions or need information? We're here to help <br>Available 24/7",
             "contact.our_details": "Our Details",
-            "contact.address": `Main registration with RCCM: 25-06-2024<br>
-Trade register number: COTONOU No. RB/ABC/24 A 109187<br>
+            "contact.address": `
 Address: Lot 73, Plot No. F, House: ATLANTIQUE, ABOMEY-CALAVI, GODOMEY, AGBO-CODJI-SEDEGBE, Benin.<br>
-RCCM: RB/ABC/24 A 109187 dated 25-06-2024.<br>
 <strong>Benin: +229 01 46 09 74 89</strong><br>
 <strong>Ivory Coast: +225 05 75 43 20 43</strong><br>
 <strong>USA: +49 1521 9221951</strong><br>`,
@@ -89,12 +87,12 @@ RCCM: RB/ABC/24 A 109187 dated 25-06-2024.<br>
             "menu.contact": "Contact",
             
             "hero.title": "Bienvenue chez Health Metrica",
-            "hero.subtitle": "Solutions innovantes d'intelligence artificielle pour améliorer les soins de santé dans les régions à ressources limitées",
+            "hero.subtitle": "Solutions innovantes d'intelligence artificielle pour des soins de santé plus dans les régions à ressources limitées",
             "hero.services_button": "Nos Services",
             "hero.contact_button": "Contactez-nous",
             
             "about.title": "À propos de nous",
-            "about.subtitle": "Stimuler l'innovation en santé avec des solutions de données sécurisées et un entreposage avancé pour une gestion fiable des données médicales",
+            "about.subtitle": "Stimuler l'innovation en santé grâce à des solutions sécurisées de gestion et d'analyse de données",
             "about.who_we_are": "Qui sommes-nous",
             "about.description": "Bienvenue chez Health Metrica, où l'innovation transforme les soins de santé. Nous fournissons des solutions de données avancées pour révolutionner le domaine médical. Notre expertise en stockage sécurisé de données et en entreposage efficace garantit une gestion fiable des informations de santé. En exploitant une technologie de pointe, nous donnons les moyens aux systèmes de santé du monde entier, permettant une meilleure prise de décision et des résultats améliorés pour les patients. Chez Health Metrica, nous nous engageons à stimuler des avancées significatives et à relever les défis uniques des systèmes de santé modernes.",
             "about.founded": "Fondée en 2022, notre entreprise s'engage à développer des solutions innovantes qui répondent aux défis uniques des systèmes de santé, en particulier dans les régions à ressources limitées.",
@@ -108,11 +106,11 @@ RCCM: RB/ABC/24 A 109187 dated 25-06-2024.<br>
             "services.storage_title": "Stockage et entrepôt de données",
             "services.storage_text": "Nous offrons des services d'entreposage de données avancés pour les soins de santé et d'autres secteurs, avec un chiffrement de pointe et des mesures de sécurité robustes pour garantir la confidentialité et l'intégrité des données.",
             "services.analysis_title": "Analyse et visualisation de données",
-            "services.analysis_text": "Nous sommes spécialisés dans l'analyse et la visualisation de données, équipant les professionnels d'insights exploitables pour prendre des décisions éclairées et améliorer les résultats pour les patients.",
+            "services.analysis_text": " Nous sommes spécialisés dans l'analyse et la visualisation de données, équipant les professionnels d'outils d'aide à la décision performants et améliorant le suivi des patients",
             "services.consulting_title": "Services de conseil",
-            "services.consulting_text": "Nous fournissons des conseils d'experts en bioinformatique, épidémiologie et analyse de données de santé, permettant aux organisations de santé d'exploiter les données pour la prise de décision stratégique et l'amélioration des résultats.",
+            "services.consulting_text": "Nos experts en bioinformatique, en épidémiologie et en analyse de données médicales accompagnent les professionnels de santé dans la prise de décision stratégique et l'amélioration de leur performance.",
             "services.app_title": "Développement d'applications",
-            "services.app_text": "Nous créons des applications innovantes pour les soins de santé et la santé publique, permettant des diagnostics précis, des évaluations des risques des patients et une gestion efficace des épidémies pour soutenir la prise de décision éclairée.",
+            "services.app_text": "Nous créons des applications innovantes pour les parcours de soins et la santé publique, permettant des diagnostics précis, l'évaluation des facteurs de risque et une gestion efficace des épidémies.",
             "services.learn_more": "En savoir plus",
             
             "faq.title": "Foire aux questions",
@@ -129,10 +127,8 @@ RCCM: RB/ABC/24 A 109187 dated 25-06-2024.<br>
             "contact.title": "Contactez-nous",
             "contact.subtitle": "Des questions ou besoin d'informations ? Nous sommes là pour vous aider <br>Disponible 24h/24 et 7j/7",
             "contact.our_details": "Nos coordonnées",
-            "contact.address": `Enregistrement principal au RCCM : 25-06-2024<br>
-Numéro du registre du commerce : COTONOU No. RB/ABC/24 A 109187<br>
+            "contact.address": `
 Adresse : Lot 73, Parcelle No. F, Maison : ATLANTIQUE, ABOMEY-CALAVI, GODOMEY, AGBO-CODJI-SEDEGBE, Bénin.<br>
-RCCM : RB/ABC/24 A 109187 en date du 25-06-2024.<br>
 <strong>Bénin : +229 01 46 09 74 89</strong><br>
 <strong>Côte d'Ivoire : +225 05 75 43 20 43</strong><br>
 <strong>USA : +49 1521 9221951</strong><br>`,

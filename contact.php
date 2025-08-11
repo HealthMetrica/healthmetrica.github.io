@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     // Email recipient (replace with your actual email)
-    $to = 'healthMetrica@gmail.com';
+    $to = 'healthmetrica@gmail.com';
     
     // Format the message body
     $email_body = "Nouveau message de: $name\n";

@@ -644,6 +644,26 @@ nav ul li a::after {
     margin-bottom: 15px;
     color: var(--primary-color);
 }
+.about-text h3 {
+    color: #003366; /* Bleu foncé */
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* Barre soulignée bleu clair sous le "Who We Are" */
+.about-text h3::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #00bfff; /* Bleu clair */
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+}
 
 /* Services Section - Version Allégée */
 #services {
@@ -778,7 +798,7 @@ nav ul li a::after {
 }
 
 .service-content .btn {
-    background: linear-gradient(145deg, white, #45a049);
+    background: var(--dark-color);
     border: none;
     padding: 12px 25px;
     border-radius: 25px;
@@ -788,15 +808,15 @@ nav ul li a::after {
     letter-spacing: 0.5px;
     font-size: 13px;
     transition: all 0.3s ease;
-    box-shadow: #45a049;
+    box-shadow: var(--dark-color);
     text-decoration: none;
     display: inline-block;
 }
 
 .service-content .btn:hover {
     transform: translateY(-2px);
-    box-shadow: linear-gradient(145deg, white,#45a049);
-    background: linear-gradient(145deg, white,#45a049);
+    box-shadow: var(--dark-color);
+    background: var(--dark-color);
 }
 
 /* Responsive Design */
@@ -1547,7 +1567,7 @@ nav ul li a::after {
 }
 
 .contact-form .btn {
-    background: linear-gradient(145deg, white,#45a049 );
+    background: var(--dark-color);
     border: none;
     padding: 12px 25px;
     color: white;
@@ -1556,15 +1576,15 @@ nav ul li a::after {
     letter-spacing: 0.5px;
     font-size: 13px;
     transition: all 0.3s ease;
-    box-shadow: #3498db;
+    box-shadow: var(--dark-color);
     text-decoration: none;
     display: inline-block;
 }
 
 .contact-form .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
-    background: linear-gradient(145deg, #2980b9, var(--primary-color));
+    box-shadow: var(--dark-color);
+    background: var(--dark-color);
 }
 
 /* Responsive Design */
