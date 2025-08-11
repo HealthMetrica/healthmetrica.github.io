@@ -516,7 +516,7 @@ nav ul li a::after {
 }
 
 .btn {
-    background: linear-gradient(145deg, white, #45a049);
+    background: var(--dark-color);
     border: none;
     padding: 15px 30px;
     color: white;
@@ -528,7 +528,7 @@ nav ul li a::after {
     text-decoration: none;
     display: inline-block;
     border-radius: 50px;
-    box-shadow: 0 8px 20px rgba(69, 160, 73, 0.3);
+    box-shadow: var(--dark-color);
     position: relative;
     overflow: hidden;
 }
@@ -556,8 +556,9 @@ nav ul li a::after {
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(69, 160, 73, 0.4);
+    background: var(--dark-color);
+    border-color: var(--dark-color);
+    box-shadow: var(--dark-color)
 }
 
 .btn-secondary:hover {

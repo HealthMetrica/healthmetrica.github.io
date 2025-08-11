@@ -52,10 +52,10 @@ const SimpleI18n = {
             "contact.subtitle": "Questions or need information? We're here to help",
             "contact.our_details": "Our Details",
             "contact.address": `
-Address: Lot 73, Plot No. F, House: ATLANTIQUE, ABOMEY-CALAVI, GODOMEY, AGBO-CODJI-SEDEGBE, Benin.<br>
+Address: Atlantique, Godomey, Benin.<br>
 <strong>Benin: +229 01 46 09 74 89</strong><br>
 <strong>Ivory Coast: +225 05 75 43 20 43</strong><br>
-<strong>USA: +49 1521 9221951</strong><br>`,
+<strong>Germany: +49 1521 9221951</strong><br>`,
   "contact.office_hours": "Office Hours: 8am - 5pm Monday - Friday",
             "contact.follow_us": "Follow Us",
             "contact.send_message": "Send Us a Message",
@@ -128,10 +128,10 @@ Address: Lot 73, Plot No. F, House: ATLANTIQUE, ABOMEY-CALAVI, GODOMEY, AGBO-COD
             "contact.subtitle": "Des questions ou besoin d'informations ? Nous sommes là pour vous aider",
             "contact.our_details": "Nos coordonnées",
             "contact.address": `
-Adresse : Lot 73, Parcelle No. F, Maison : ATLANTIQUE, ABOMEY-CALAVI, GODOMEY, AGBO-CODJI-SEDEGBE, Bénin.<br>
+Adresse : Atlantique, Godomey, Bénin.<br>
 <strong>Bénin : +229 01 46 09 74 89</strong><br>
 <strong>Côte d'Ivoire : +225 05 75 43 20 43</strong><br>
-<strong>USA : +49 1521 9221951</strong><br>`,
+<strong>Allemagne : +49 1521 9221951</strong><br>`,
   "contact.office_hours": "Heures d'ouverture : 8h - 17h Lundi- Vendredi",
             "contact.follow_us": "Suivez-nous",
             "contact.send_message": "Envoyez-nous un message",
