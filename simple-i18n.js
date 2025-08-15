@@ -87,7 +87,7 @@ Address: Atlantique, Godomey, Benin.<br>
             "menu.contact": "Contact",
             
             "hero.title": "Bienvenue chez Health Metrica",
-            "hero.subtitle": "Solutions innovantes d'intelligence artificielle pour des soins de santé plus dans les régions à ressources limitées",
+            "hero.subtitle": "Des solutions d’intelligence artificielle novatrices pour rendre les soins de santé accessibles et performants dans les régions à ressources limitées.",
             "hero.services_button": "Nos Services",
             "hero.contact_button": "Contactez-nous",
             
