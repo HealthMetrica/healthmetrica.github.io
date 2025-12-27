@@ -145,7 +145,7 @@ Adresse : Atlantique, Godomey, Bénin.<br>
             "footer.quick_links": "Liens rapides",
             "footer.services": "Services",
             "footer.copyright": "2025 Health Metrica. Tous droits réservés.",
-            "footer.credit_prefix": "Conçu et développé par",
+            //"footer.credit_prefix": "Conçu et développé par",
             
             // Messages de validation
             "validation.fillAllFields": "Veuillez remplir tous les champs",
